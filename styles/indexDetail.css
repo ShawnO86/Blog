@@ -1,0 +1,82 @@
+.previewBox {
+    min-height: 10rem;
+    border-radius: 1rem;
+    background-color: var(--second-color);
+    color: var(--font-color);
+    padding: 0 1rem 1rem 1rem;
+    text-align: right;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.previewBox h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.previewBox a {
+    font-size: 0.75rem;
+}
+
+.previewBox a:hover::before {
+    content: '> ';
+}
+
+/* Header for preview box */
+.boxHead {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0 0 0;
+    border-bottom: 1px solid var(--font-color);
+}
+
+.boxContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.75rem;
+    text-align: left;
+    gap: 0.5rem;
+}
+
+.boxContent p {
+    font-size: 0.75rem;
+}
+
+.previewImg {
+    width: 50%;
+}
+
+/* Sidebar flex child 1*/
+.aboutContainer {
+    border-bottom: 1px solid var(--font-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.circle {
+    width: 50%;
+    height: auto;
+    padding: 12% 0 12% 0;
+    border: 1px dashed var(--third-color);
+    text-align: center;
+    border-radius: 50%;
+    margin: 2rem auto;
+    font-size: calc(1rem + 3vw);
+    background-color: var(--main-color);
+    color: var(--third-color);
+}
+
+.circle::after {
+    content: '</>';
+}
+
+/* Sidebar flex child 2*/
+.timeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
