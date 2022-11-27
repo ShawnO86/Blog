@@ -10,7 +10,7 @@
     gap: 1rem;
     margin: 0 auto;
     padding: 0;
-    max-width: 1500px;
+    max-width: 1450px;
     color: var(--font-color);
 }
 /* Main header */
@@ -19,7 +19,7 @@ header {
     grid-area: head;
     background-color: var(--main-color);
     padding: 1rem 2rem;
-    text-align: justify;
+    text-align: left;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
@@ -45,7 +45,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 2rem;
     background-color: var(--second-color);
     border-left: 1px solid var(--third-color);
     border-right: 1px solid var(--third-color);
