@@ -5,7 +5,6 @@
         "head head head head head side side"
         "main main main main main side side"
         "ft ft ft ft ft side side";
-    grid-template-rows: minmax(10rem, 1fr) minmax(42rem, 5fr) minmax(7rem, 1fr);
     grid-template-columns: repeat(7, 1fr);
     gap: 1rem;
     margin: 0 auto;
@@ -13,22 +12,28 @@
     max-width: 1450px;
     color: var(--font-color);
 }
-/* Main header */
-header {
-    border-radius: 0 0 1rem 1rem;
-    grid-area: head;
+
+/* Children of main layout grid with these same styles */
+.header,
+.mainContent,
+.footer {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
     background-color: var(--main-color);
-    padding: 1rem 2rem;
-    text-align: left;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    padding: 1rem 2rem 2rem 2rem;
+    border: none;
 }
 
+/* Main header */
+.header {
+    border-radius: 0 0 1rem 1rem;
+    grid-area: head;
+    text-align: left;
+}
+
+/* Main Content styles */
 .mainContent {
     border-radius: 1rem;
     grid-area: main;
-    background-color: var(--main-color);
-    padding: 1rem 2rem;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .previewContainer {
@@ -39,34 +44,14 @@ header {
     padding: 6rem 3rem;
 }
 
-.sideBar {
-    grid-area: side;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    background-color: var(--second-color);
-    border-left: 1px solid var(--third-color);
-    border-right: 1px solid var(--third-color);
-}
-
-.footer {
-    border-radius: 1rem 1rem 0 0;
-    grid-area: ft;
-    text-align: center;
-    background-color: var(--main-color);
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-}
-
 .previewBox {
     min-height: 10rem;
     border-radius: 1rem;
     background-color: var(--second-color);
     color: var(--font-color);
-    padding: 0 1rem 1rem 1rem;
+    padding: 0.5rem 1rem 1rem 1rem;
     text-align: right;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .previewBox h3 {
@@ -88,7 +73,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 0 0 0;
+    padding: 0;
     border-bottom: 1px solid var(--font-color);
 }
 
@@ -107,6 +92,19 @@ header {
 
 .previewImg {
     width: 50%;
+}
+
+/* About me sidebar styles */
+.sideBar {
+    grid-area: side;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--second-color);
+    border-left: 1px solid var(--third-color);
+    border-right: 1px solid var(--third-color);
 }
 
 /* Sidebar flex child 1*/
@@ -142,5 +140,11 @@ header {
     row-gap: 1rem;
 }
 
-
-
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem 1rem 0 0;
+    grid-area: ft;
+    text-align: center;
+}
