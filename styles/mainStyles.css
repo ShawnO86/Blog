@@ -1,7 +1,6 @@
-/* I would rather use a single stylesheet for the document but rubric states I need at least 3 imports in main CSS? */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
-@import './indexLayout.css';
-@import './indexDetail.css';
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap);
+@import "./indexLayout.css";
+@import "./postsStyle/postStyle.css";
 
 /* Defining colors to use as variables */
 :root {
@@ -14,7 +13,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #686875;
 }
 
@@ -44,10 +43,10 @@ a:hover {
 @media screen and (max-width: 900px) {
     .mainLayoutContainer {
         grid-template-areas:
-            'head head head head head head head'
-            'side side side side side side side'
-            'main main main main main main main'
-            'ft ft ft ft ft ft ft';
+            "head head head head head head head"
+            "side side side side side side side"
+            "main main main main main main main"
+            "ft ft ft ft ft ft ft";
         gap: 0.5rem;
         grid-template-rows: minmax(10rem, 1fr) minmax(20rem, 2fr) minmax(40rem, 4fr) minmax(5rem, 0.5fr);
         grid-template-columns: 1fr;
@@ -82,10 +81,6 @@ a:hover {
         padding: 0.5rem;
         margin: 3rem 1rem;
         font-size: 1.5rem;
-    }
-
-    .circle::after {
-        content: '</>';
     }
 
     .previewContainer {
