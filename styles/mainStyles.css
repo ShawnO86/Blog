@@ -4,17 +4,17 @@
 
 /* Defining colors to use as variables */
 :root {
-    --main-color: #77757e;
-    --second-color: #44414D;
+    --main-color: #1E2A3A;
+    --second-color: #161E29;
     --third-color: #73BF27;
-    --font-color: #f0f0f0;
+    --font-color: #F6FCFF;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    background-color: #231d33;
+    background-color: #111822;
 }
 
 a {
@@ -51,27 +51,25 @@ a:hover {
         grid-template-columns: 1fr;
     }
 
-    .header {
-        border-radius: 0;
-
-    }
-
-    .mainContent {
+    .header,
+    .mainContent,
+    .footer {
         border-radius: 0;
     }
 
     .sideBar {
-        border-right: 1px solid var(--third-color);
         text-align: left;
-    }
-
-    .footer {
-        border-radius: 0;
     }
 
     .aboutContainer {
         display: flex;
         gap: 1rem;
+    }
+
+    .timeContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 1rem;
     }
 
     .circle {
@@ -103,5 +101,11 @@ a:hover {
 
     .circle::after {
         content: "";
+    }
+
+    .previewContainer {
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        gap: 0.5rem;
+        padding: 1rem 0.5rem;
     }
 }

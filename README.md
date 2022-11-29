@@ -1,1 +1,1 @@
-# Blogging of my learning web development and some hobbies and other interests.
+# Blogging my learning of web development and some of my hobbies and other interests.
