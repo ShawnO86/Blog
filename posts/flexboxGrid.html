@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/mainStyles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Blog: CSS Flexbox & Grid</title>
+</head>
+
+<body>
+
+    <body>
+        <main class="mainLayoutContainer" id="top">
+
+            <header class="header">
+                <h1>Blog Post.</h1>
+                <div class="blogHead">
+                    <h2>CSS Flexbox & Grid</h2>
+                    <sub>11/29/2022</sub>
+                </div>
+            </header>
+
+            <section class="mainContent">
+                <div class="blogViewBox">
+                    <div class="boxContent">
+                        <div class="boxDesc">
+                            <h3>Flexbox</h3>
+                            <p><strong>Flexible Box Layout</strong> is a module of CSS that defines a CSS box model
+                                optimized for user interface design, and the layout of items in one dimension. In the
+                                flex layout model, the children of a flex container can be laid out in any direction,
+                                and can “flex” their sizes, either growing to fill unused space or shrinking to avoid
+                                overflowing the parent. Both horizontal and vertical alignment of the children can be
+                                easily manipulated.</p>
+
+                            <p>In the following example a container has been set to display: flex, which means that the
+                                child items become flex items. The value of justify-content has been set to
+                                space-between in order to space the items out evenly on the main axis. An equal amount
+                                of space is placed between each item with the left and right items being flush with the
+                                edges of the flex container.</p>
+                            <pre>
+                                <code>
+    .box {
+    display: flex;
+    justify-content: space-between;
+    }
+                                </code>
+                            </pre>
+                            <h3>Grid</h3>
+                            <p>CSS Grid Layout excels at dividing a page into major regions or defining the relationship
+                                of elements in terms of size, position, and layer.</p>
+                            <p>Like tables, grid layout enables the developer to align elements into columns and rows.
+                                However, many more layouts are possible as well as easier with CSS grid than they were
+                                with tables. For example, a grid container's child elements could position themselves so
+                                they actually overlap and layer, similar to CSS positioned elements.</p>
+                            <p>The example below has a container set to display: grid. This grid has 7 columns divided
+                                equally between the containers area. The fr unit stands for fraction of the containers
+                                area. The area is laid out to have the "head" area on top taking up 5 columns and the
+                                first row, the "main" area on the second row, "ft" on the third, and a side bar taking
+                                up the last two columns on all the rows. If you are viewing this page at a resolution of
+                                900 pixels or greater you can see this exact layout.</p>
+                            <pre>
+                                <code>
+    .gridContainer {
+    display: grid;
+    grid-template-areas:
+    "head head head head head side side"
+    "main main main main main side side"
+    "ft ft ft ft ft side side";
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+    }
+                                </code>
+                            </pre>
+                            <div class="boxNav">
+                                <a href="/index.html">Main page</a>
+                                <a href="#top">Top &uarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="sideBar">
+                <div class="circle"></div>
+                <h4>Links</h4>
+                <div class="timeContainer">
+                    <p><a href="/index.html">Main Page</a></p>
+                    <p><a href="">Post 2 - Date 2022</a></p>
+                    <p><a href="">Post 3 - Date 2022</a></p>
+                    <p><a href="">Post 4 - Date 2022</a></p>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="iconHolder"><img src="../images/GitHub-Mark-Light-32px.png"></div>
+                <div class="subMsg">To get updates on my blog &rarr; <button id="subButton">Subscribe</button>
+                </div>
+            </footer>
+
+        </main>
+
+    </body>
+
+</html>

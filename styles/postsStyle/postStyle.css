@@ -1,1 +1,37 @@
 /* For blog post pages */
+
+.blogViewBox {
+    min-height: 20rem;
+    background-color: var(--second-color);
+    color: var(--font-color);
+    padding: 2rem 4rem;
+    margin: 4rem 3rem;
+    line-height: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.blogHead {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+code {
+    display: block;
+    background-color: var(--main-background);
+    border-left: 2px solid var(--third-color);
+    color: var(--font-color);
+    line-height: 1.5rem;
+    text-align: left;
+  }
+
+  pre {
+    white-space: pre-wrap;
+  }
+
+  .boxNav {
+    display: flex;
+    justify-content: space-between;
+  }
+

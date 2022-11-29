@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap);
-@import "./indexLayout.css";
+@import "./layout.css";
 @import "./postsStyle/postStyle.css";
 
 /* Defining colors to use as variables */
@@ -8,13 +8,14 @@
     --second-color: #161E29;
     --third-color: #73BF27;
     --font-color: #F6FCFF;
+    --main-background: #111822;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    background-color: #111822;
+    background-color: var(--main-background);
 }
 
 a {
@@ -107,5 +108,10 @@ a:hover {
         grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
         gap: 0.5rem;
         padding: 1rem 0.5rem;
+    }
+
+    .blogViewBox {
+        padding: 2rem;
+        margin: 0;
     }
 }
