@@ -87,7 +87,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 500px) {
     .aboutContainer {
         gap: 0;
     }
@@ -111,7 +111,12 @@ a:hover {
     }
 
     .blogViewBox {
-        padding: 2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .blogViewBox p, .blogViewBox blockquote, .blogViewBox h3 {
+        padding: 0.5rem;
         margin: 0;
     }
 }

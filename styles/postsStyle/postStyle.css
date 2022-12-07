@@ -1,13 +1,17 @@
 /* For blog post pages */
 
 .blogViewBox {
-    min-height: 20rem;
     background-color: var(--second-color);
     color: var(--font-color);
     padding: 2rem 4rem;
-    margin: 4rem 3rem;
+    margin: 1rem 0.5rem;
     line-height: 1.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0;
+}
+
+.blogViewBox p, .blogViewBox blockquote, .blogViewBox h3 {
+  padding: 0.5rem;
+  margin: 0;
 }
 
 .blogHead {
@@ -33,5 +37,6 @@ code {
   .boxNav {
     display: flex;
     justify-content: space-between;
+    padding: 0.5rem;
   }
 
