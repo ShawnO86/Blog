@@ -85,7 +85,7 @@
 figure {
     display: inline-block;
     font-size: 0.65rem;
-    text-align: right;
+    text-align: center;
     width: 100%;
     margin: auto;
     border-radius: 1rem;
@@ -99,7 +99,10 @@ figcaption {
     width: 100%;
 }
 
-
+.blogImg {
+    width: 50%;
+    margin: 1rem;
+}
 
 /* About me sidebar styles */
 .sideBar {
@@ -141,6 +144,7 @@ figcaption {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     column-gap: 2rem;
     row-gap: 1rem;
 }

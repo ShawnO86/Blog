@@ -29,23 +29,25 @@
                     <div class="boxContent">
                         <div class="boxDesc">
                             <h3>Flexbox</h3>
-                            <p>In the following example a container has been set to display: <u>flex</u>, which means that the
+
+                            <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout">
+                                <em>Flexible Box Layout</em> is a module of CSS that defines a CSS box model
+                                optimized for user interface design, and the layout of items in one dimension. In the
+                                flex layout model, the children of a flex container can be laid out in any direction,
+                                and can “flex” their sizes, either growing to fill unused space or shrinking to avoid
+                                overflowing the parent. Both horizontal and vertical alignment of the children can be
+                                easily manipulated. <sub><a
+                                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout"
+                                        target="_blank">View
+                                        more on the MDN</a></a></sub>
+                            </blockquote>
+
+                            <p>In the following example a container has been set to display: <em>flex</em>, which means
+                                that the
                                 child items become flex items. The value of justify-content has been set to
                                 space-between in order to space the items out evenly on the main axis. An equal amount
                                 of space is placed between each item with the left and right items being flush with the
                                 edges of the flex container.</p>
-
-                                <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout">
-                                    <em>Flexible Box Layout</em> is a module of CSS that defines a CSS box model
-                                    optimized for user interface design, and the layout of items in one dimension. In the
-                                    flex layout model, the children of a flex container can be laid out in any direction,
-                                    and can “flex” their sizes, either growing to fill unused space or shrinking to avoid
-                                    overflowing the parent. Both horizontal and vertical alignment of the children can be
-                                    easily manipulated. <sub><a
-                                            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout"
-                                            target="_blank">View
-                                            more on the MDN</a></a></sub>
-                                </blockquote>
                             <pre>
                                 <code>
     .box {
@@ -55,14 +57,8 @@
                                 </code>
                             </pre>
                             <h3>Grid</h3>
-                            <p>The example below has a container set to display: <u>grid</u>. This grid has 7 columns divided
-                                equally between the containers area. The fr unit stands for fraction of the containers
-                                area. The area is laid out to have the "head" area on top taking up 5 columns and the
-                                first row, the "main" area on the second row, "ft" on the third, and a side bar taking
-                                up the last two columns on all the rows. If you are viewing this page at a resolution of
-                                900 pixels or greater you can see this exact layout.</p>
 
-                                <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"><em>CSS
+                            <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"><em>CSS
                                     Grid Layout</em> excels at dividing a page into major regions or defining the
                                 relationship of elements in terms of size, position, and layer.
                                 Like tables, grid layout enables the developer to align elements into columns and rows.
@@ -72,6 +68,13 @@
                                         href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
                                         target="_blank">View more on
                                         the MDN</a></sub></blockquote>
+
+                            <p>The example below has a container set to display: <em>grid</em>. This grid has 7 columns
+                                divided
+                                equally between the containers area. The gap attribute specifies the amount of space between child containers. The area is laid out to have the "head" area on top taking up 5 columns and the
+                                first row, the "main" area on the second row, "ft" on the third, and a side bar taking
+                                up the last two columns on all the rows. If you are viewing this page at a resolution of
+                                900 pixels or greater you can see this exact layout:</p>
                             <pre>
                                 <code>
     .gridContainer {
@@ -80,7 +83,6 @@
     "head head head head head side side"
     "main main main main main side side"
     "ft ft ft ft ft side side";
-    grid-template-columns: repeat(7, 1fr);
     gap: 1rem;
     }
                                 </code>
@@ -98,12 +100,12 @@
 
             <section class="sideBar">
                 <div class="circle"></div>
-                <h4>Links</h4>
+                <h4>Timeline</h4>
                 <div class="timeContainer">
                     <p><a href="../index.html">Main Page</a></p>
-                    <p><a href="">Post 2 - Date 2022</a></p>
-                    <p><a href="">Post 3 - Date 2022</a></p>
-                    <p><a href="">Post 4 - Date 2022</a></p>
+                    <p><a href="./jsDom.html">JavaScript and the DOM - 12/07/2022</a></p>
+                    <p><a href="">Post 2 - Date</a></p>
+                    <p><a href="">Post 3 - Date</a></p>
                 </div>
             </section>
 

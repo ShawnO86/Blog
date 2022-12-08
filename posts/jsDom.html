@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/mainStyles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Blog: JavaScript and the DOM</title>
+</head>
+
+<body>
+
+    <body>
+        <main class="mainLayoutContainer" id="top">
+
+            <header class="header">
+                <h1>Blog Post.</h1>
+                <div class="blogHead">
+                    <h2>JavaScript and the DOM</h2>
+                    <sub>12/07/2022</sub>
+                </div>
+            </header>
+
+            <section class="mainContent">
+                <div class="blogViewBox">
+                    <div class="boxContent">
+                        <div class="boxDesc">
+                            <h3>What is the DOM?</h3>
+                            <p>The <em>Document Object Model</em> (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+                                <figure>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/DOM-model.svg" class="blogImg"><figcaption><a href="https://commons.wikimedia.org/wiki/File:DOM-model.svg">‍Birger Eriksson</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons</figcaption></figure>
+
+                            <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout">
+                                A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an object-oriented representation of the web page, it can be modified with a scripting language such as JavaScript.
+                                <sub><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+                                        target="_blank">View
+                                        more on the MDN</a></a></sub>
+                            </blockquote>
+
+                                <p>For example, the DOM specifies that the querySelectorAll method in this code snippet must return a list of all the "p" elements in the document:</p>
+
+                                    <pre>
+                                        <code>
+    const paragraphs = document.querySelectorAll("p");
+    // paragraphs[0] is the first element
+    // paragraphs[1] is the second element, etc.
+    alert(paragraphs[0].nodeName);
+                                        </code>
+                                    </pre>
+                            
+                            <div class="boxNav">
+                                <a href="../index.html">Main page</a>
+                                <a href="#top">Top &uarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="sideBar">
+                <div class="circle"></div>
+                <h4>Timeline</h4>
+                <div class="timeContainer">
+                    <p><a href="../index.html">Main Page</a></p>
+                    <p><a href="./flexboxGrid.html">CSS Flexbox & Grid - 11/29/2022</a></p>
+                    <p><a href="">Post 2 - Date</a></p>
+                    <p><a href="">Post 3 - Date</a></p>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="iconHolder"><img src="../images/GitHub-Mark-Light-32px.png"></div>
+                <div class="subMsg">To get updates on my blog &rarr; <button id="subButton">Subscribe</button>
+                </div>
+            </footer>
+
+        </main>
+
+    </body>
+
+</html>
