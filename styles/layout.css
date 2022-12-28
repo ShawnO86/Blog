@@ -2,14 +2,13 @@
 .mainLayoutContainer {
     display: grid;
     grid-template-areas:
-        "head head head head head side side"
-        "main main main main main side side"
-        "ft ft ft ft ft side side";
-    grid-template-columns: repeat(7, 1fr);
+        "head head head head head head side side"
+        "main main main main main main side side"
+        "ft ft ft ft ft ft side side";
+    grid-template-columns: repeat(8, 1fr);
     gap: 1rem;
     margin: 0 auto;
     padding: 0;
-    max-width: 1450px;
     color: var(--font-color);
 }
 
@@ -17,9 +16,7 @@
 .header,
 .mainContent,
 .footer {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
-    background-color: var(--main-color);
-    padding: 0.5rem 1rem 1rem 1rem;
+    padding: 1rem 0;
     border: none;
 }
 
@@ -27,13 +24,17 @@
 .header {
     border-radius: 0 0 1rem 1rem;
     grid-area: head;
-    text-align: left;
+    text-align: center;
 }
 
 /* Main Content styles */
 .mainContent {
-    border-radius: 1rem;
     grid-area: main;
+    padding: 1rem 0;
+}
+
+.mainHeader {
+    padding: 0 1rem;
 }
 
 .previewContainer {
@@ -144,7 +145,7 @@ figcaption {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     column-gap: 2rem;
     row-gap: 1rem;
 }
@@ -157,4 +158,5 @@ figcaption {
     border-radius: 1rem 1rem 0 0;
     grid-area: ft;
     text-align: center;
+    padding: 1rem;
 }
