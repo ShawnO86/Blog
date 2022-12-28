@@ -7,8 +7,6 @@
         "ft ft ft ft ft ft side side";
     grid-template-columns: repeat(8, 1fr);
     gap: 1rem;
-    margin: 0 auto;
-    padding: 0;
     color: var(--font-color);
 }
 
@@ -30,7 +28,6 @@
 /* Main Content styles */
 .mainContent {
     grid-area: main;
-    padding: 1rem 0;
 }
 
 .mainHeader {
@@ -39,10 +36,10 @@
 
 .previewContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    gap: 3vw;
     border-top: 1px solid var(--third-color);
-    padding: 6rem 3rem;
+    padding: 5rem 3rem;
 }
 
 .previewBox {
@@ -50,7 +47,6 @@
     background-color: var(--second-color);
     color: var(--font-color);
     padding: 1rem;
-    text-align: right;
     border-radius: 0.5rem;
 }
 
@@ -111,7 +107,6 @@ figcaption {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 2rem;
     background-color: var(--second-color);
 }
@@ -146,8 +141,7 @@ figcaption {
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    column-gap: 2rem;
-    row-gap: 1rem;
+    gap: 1rem;
 }
 
 .footer {
@@ -155,7 +149,6 @@ figcaption {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    border-radius: 1rem 1rem 0 0;
     grid-area: ft;
     text-align: center;
     padding: 1rem;

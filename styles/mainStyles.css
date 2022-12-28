@@ -27,20 +27,6 @@ a:hover {
 }
 
 /* Media queries for responsiveness */
-@media screen and (max-width: 1450px) {
-    .header {
-        border-radius: 0 0 1rem 0;
-    }
-
-    .mainContent {
-        border-radius: 0 1rem 1rem 0;
-    }
-
-    .footer {
-        border-radius: 0 1rem 0 0;
-    }
-}
-
 @media screen and (max-width: 900px) {
     .mainLayoutContainer {
         grid-template-areas:
@@ -52,8 +38,14 @@ a:hover {
         grid-template-columns: 1fr;
     }
 
+    .mainHeader {
+        text-align: center;
+        margin-top: 3rem;
+    }
+
     .sideBar {
         text-align: left;
+        margin-top: 2rem;
     }
 
     .aboutContainer {
@@ -64,19 +56,17 @@ a:hover {
     .timeContainer {
         flex-direction: row;
         flex-wrap: wrap;
-        column-gap: 1rem;
     }
 
     .circle {
         width: 2rem;
         height: 2rem;
         padding: 0.5rem;
-        margin: 3rem 1rem;
+        margin: 3rem auto;
         font-size: 1.5rem;
     }
 
     .previewContainer {
-        grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
         padding: 2rem 1rem 0 1rem;
     }
 
@@ -107,7 +97,7 @@ a:hover {
     .previewContainer {
         grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
         gap: 0.5rem;
-        padding: 1rem 0.5rem;
+        padding: 1rem 0.5rem 0 0.5rem;
     }
 
     .blogViewBox {
